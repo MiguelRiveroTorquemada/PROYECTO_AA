@@ -50,8 +50,8 @@ public class Calculadora {
         }
     }
     
-    private void hacerResta(){
-        int resultado = num1-num2;
+    private void hacerMultiplicacion(){
+        int resultado = num1*num2;
         System.out.println("El resultado es: " + resultado);
     }
 }
