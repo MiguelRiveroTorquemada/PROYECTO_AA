@@ -49,4 +49,9 @@ public class Calculadora {
                 break;
         }
     }
+    
+    private void hacerSuma(){
+        int resultado = num1+num2;
+        System.out.println("El resultado es: " + resultado);
+    }
 }
