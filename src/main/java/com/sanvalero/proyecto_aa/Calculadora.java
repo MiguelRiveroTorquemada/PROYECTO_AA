@@ -16,42 +16,24 @@ public class Calculadora {
         this.num2 = entrada.nextInt();
         Scanner entrada = new Scanner(System.in);
     }
-    
-    public void ejecutar() {
-        
-        System.out.print("Elige una operacion : \n");
-        System.out.print("1.SUMA \n");
-        System.out.print("2.RESTA \n");
-        System.out.print("3.MULTIPLICACION \n");
-        System.out.print("4.DIVISION \n");
-        
-        String operacion = entrada.next();
-        
-        switch (operacion){
-            case "1":
-                hacerSuma();
-                break;
-               
-            case "2":
-                hacerResta();
-                break;
-                
-            case "3":
-                hacerMultiplicacion();
-                break;
-                
-            case "4":
-                hacerDivision();
-                break;
-                
-            default:
-                System.out.println("OPCION ERRONEA");
-                break;
-        }
+       
+    private void hacerSuma(){
+        int resultado = num1+num2;
+        System.out.println("El resultado es: " + resultado);
     }
     
-    private void hacerMultiplicacion(){
+    private void hacerResta(){
+        int resultado = num1-num2;
+        System.out.println("El resultado es: " + resultado);
+    }
+	
+	 private void hacerMultiplicacion(){
         int resultado = num1*num2;
+        System.out.println("El resultado es: " + resultado);
+    }
+    
+    private void hacerDivision(){
+        int resultado = num1/num2;
         System.out.println("El resultado es: " + resultado);
     }
 }
