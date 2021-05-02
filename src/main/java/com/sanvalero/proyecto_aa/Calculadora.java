@@ -26,5 +26,27 @@ public class Calculadora {
         System.out.print("4.DIVISION \n");
         
         String operacion = entrada.next();
+        
+        switch (operacion){
+            case "1":
+                hacerSuma();
+                break;
+               
+            case "2":
+                hacerResta();
+                break;
+                
+            case "3":
+                hacerMultiplicacion();
+                break;
+                
+            case "4":
+                hacerDivision();
+                break;
+                
+            default:
+                System.out.println("OPCION ERRONEA");
+                break;
+        }
     }
 }
